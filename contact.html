@@ -158,28 +158,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ******FOOTER****** --> 
 
 
-	    
+	    <form id="myform" method="post">
+<label>reply_to</label>
+<input type="text" name="reply_to" />
+<label>from_name</label>
+<input type="text" name="from_name" />
+<label>name</label>
+<input type="text" name="name" />
+<label>email</label>
+<input type="text" name="email" />
+<label>phone</label>
+<input type="text" name="phone" />
+<label>message</label>
+<input type="text" name="message" />
+<br><br>
+<button>
+Send
+</button>
+</form>
+
        
  
     <!-- Javascript -->          
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
-   (function(){
+	$(window).load(function(){
+	   (function(){
       emailjs.init("user_Ryj3NDy5db3sn48X59N1C");
    })();
+	})
+  
 </script>
 	
+	
 	 <script>
-		 $(window).load(function(){
-		 var myform = $("#contact-form");
-	    console.log('1111',myform)
+		
+var myform = $("form#myform");
 myform.submit(function(event){
-	
-	console.log('submit')
-	
 	event.preventDefault();
 
   // Change to your service ID, or keep using the default service
@@ -189,6 +208,7 @@ myform.submit(function(event){
   myform.find("button").text("Sending...");
   emailjs.sendForm(service_id,template_id,"myform")
   	.then(function(){ 
+    	alert("Sent!");
        myform.find("button").text("Send");
     }, function(err) {
        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
@@ -196,7 +216,6 @@ myform.submit(function(event){
     });
   return false;
 });
-		 })
 
     </script>    
 	
