@@ -6,6 +6,14 @@
  * Twitter: @3rdwave_themes
 */
 /* ======= Base ======= */
+
+
+.jx_ui_Widget{
+  height:auto!important;
+  content: "Close Chat";
+  background:transparent!important;
+}
+
 body {
   font-family: 'Roboto', arial, sans-serif;
   color: #444;
