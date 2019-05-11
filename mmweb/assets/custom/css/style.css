@@ -1,0 +1,124 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+    background-color: #f2e0cf;
+}
+.category-strip {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+}
+.strip-box {
+    background-color: rgba(255, 255, 255, 0.52);
+    margin: 1px;
+    width: 16.7%;
+    text-align: -webkit-center;
+    padding: 5px;
+}
+img.catimg {
+    max-width: 59px;
+    padding:6px 3px;
+}
+.box-content {
+    font-size: 14px;
+    font-family: monospace;
+    color: black;
+}
+.surprise-moments{
+    color: #6a6a6b;
+    font-size: 28px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.slider{
+    width: 50%;
+}
+
+.slider-inner{
+    width: 85%;
+    margin: auto;
+    height: 300px;
+    overflow: hidden;
+    border: 30px solid #635959;
+    border-radius: 21px;
+    box-shadow: 3px 3px 1px 1px #383838;
+    position: relative;
+
+}
+
+@keyframes slideshow {
+    0%    { top: 0; }
+    100%  { top: -500%; }
+}
+
+.sliding-image{
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: slideshow 20s linear infinite;
+}
+
+.center-stage-inner{
+    display: flex;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.0625em 1.875em;
+    border-radius: 5px;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.133;
+    -webkit-font-smoothing: antialiased;
+    transition: 150ms ease;
+    transition-property: background-color, border-color, box-shadow, color;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    background-color: #5c6ac4;
+    color: #ffffff;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.btn-line{
+    margin-top: 55px;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.center-stage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width:1170px;
+    margin: auto;
+    padding:15px;
+}
+
+.special-moments{
+    font-size: 46px;
+    font-weight:800;
+}
+

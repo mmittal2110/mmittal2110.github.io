@@ -1,0 +1,46 @@
+@media only screen and (max-width: 600px) {
+    .category-strip {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .strip-box {
+        width: 100%;
+    }
+
+    .body-wrapper {
+        margin-top: -2px;
+    }
+
+
+    body {
+        padding-bottom: 30px;
+    }
+    .mobile-no{
+        display: none;
+    }
+    .slider{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .center-stage-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .slider-inner {
+        width: 92%;
+        margin: auto;
+        height: 385px;
+        overflow: hidden;
+        border: 15px solid #8c8585;
+        border-radius: 5px;
+        box-shadow: 3px 3px 1px 1px #383838;
+        position: relative;
+    }
+
+    @keyframes slideshow {
+        0%    { top: 0; }
+        100%  { top: -250%; }
+    }
+
+}
