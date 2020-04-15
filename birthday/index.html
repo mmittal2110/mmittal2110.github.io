@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+</head> 
+
+<body>     
+	<div id="hero" class="hero-section">
+		<div class="bg1"></div>
+		<div class="bg2"></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="hero-box">
+					<div class="headline script">
+						
+						<div class="names display-block">John Smith</div>
+						<div class="statement display-block">
+							<span class="statement-text">Happy</span>
+							<span class="statement-text">Birthday!!</span>
+						</div>
+
+						<div class="date">
+							<span class="date-text">July 16, 2020</span>
+						</div>
+						<a class="whatsapp btn-primary" href="https://api.whatsapp.com/send?phone=0123456789&text=Happy Birthday!!"
+
+ 						 class="btn btn-primary btn-rsvp" >Give your best wishes</a>
+						<img class="gif" src="https://i.pinimg.com/originals/b8/13/73/b813736a9e15ca01bacd8454c29096ad.gif"/>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script>
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+document.getElementsByClassName('names')[0].innerText = getParameterByName('name') || "John Smith"
+document.getElementsByClassName('date-text')[0].innerText = getParameterByName('date') || "16 July 2020"
+document.getElementsByClassName('whatsapp')[0].setAttribute("href", 'https://api.whatsapp.com/send?phone='+getParameterByName('phone')+'&text=Happy Birthday!!');
+
+
+
+
+
+</script>
+
+</html> 
+

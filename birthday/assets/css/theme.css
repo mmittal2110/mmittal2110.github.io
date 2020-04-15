@@ -1,0 +1,163 @@
+.hero-section{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.hero-box{
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5019607843137255);
+}
+
+.headline{
+    text-align: center;
+}
+
+.bg1{
+    background: #fcb8aa;
+    position: fixed;
+    left: -740px;
+    top: -467px;
+    bottom: -556px;
+    right: 50%;
+    transform: rotate(11deg);
+    z-index: 999;
+}
+
+.bg2{
+    background: #fa8a73;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 12%;
+    right: 0;
+}
+
+.container{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #000;
+    z-index: 9999;
+    border-radius: 2px;
+    padding: 20px;
+  font-family: Androgyne;
+  background-image: url('http://build.digitalcraft.co/snow/flake1.png'), 
+  url('http://build.digitalcraft.co/snow/flake2.png'), 
+  url('http://build.digitalcraft.co/snow/flake3.png');
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+    
+    .statement-text {
+        font-size: 44px;
+        font-weight: 900;
+        font-family: monospace;
+        background: linear-gradient(to right, #e57761, #facbc2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Satisfy;
+    }
+
+
+    .names{
+    font-size: 44px;
+    font-weight: 900;
+    font-family: satisfy;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    }
+
+    .btn-primary {
+      background: #d2654f;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 28px;
+      font-size: 19px;
+      font-family: satisfy;
+      margin-top: 20px;
+      text-decoration: none;
+      display: block;
+      max-width: 300px;
+      margin: auto;
+      margin-bottom: 30px;
+  }
+
+    /* latin */
+@font-face {
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://fonts.gstatic.com/s/satisfy/v10/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+
+  .date {
+    font-size: 28px;
+    color: #413a38;
+    background: transparent url(https://themes.3rdwavemedia.com/matrimony/bs4/4.0/assets/images/ribbon-lime.svg) no-repeat center top;
+    height: 126px;
+    padding-top: 8px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    -webkit-opacity: .85;
+    -moz-opacity: .85;
+    opacity: .85;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .gif{
+    margin: 30px;
+    position: absolute;
+    left: -30px;
+    bottom: -75px;
+    right: -30px;
+    width: 100%;
+}
+}
+
+
+
+
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
