@@ -127,13 +127,14 @@
 
 
 @media only screen and (max-width: 500px) {
-  .gif{
+  .gif {
     margin: 30px;
     position: absolute;
     left: -30px;
-    bottom: -75px;
+    bottom: -30px;
     right: -30px;
     width: 100%;
+    max-height: 135px;
 }
 }
 
