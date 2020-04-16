@@ -63,6 +63,9 @@
   -moz-animation: snow 10s linear infinite;
   -ms-animation: snow 10s linear infinite;
   animation: snow 10s linear infinite;
+  display: flex;
+    align-items: center;
+    justify-content: center;
 }
     
     .statement-text {
@@ -126,15 +129,25 @@
 }
 
 
+.birthday-bg{
+    background: url(https://pluspng.com/img-png/birthday-cake-png-birthday-cake-png-clipart-png-image-2499.png);
+    left: 20px;
+    right: 20px;
+    height: 55px;
+    bottom: 22px;
+    background-size: contain;
+    position: fixed;
+    background-repeat: repeat round;
+}
+
 @media only screen and (max-width: 500px) {
-  .gif {
+  .gif{
     margin: 30px;
     position: absolute;
     left: -30px;
-    bottom: -30px;
+    bottom: -75px;
     right: -30px;
     width: 100%;
-    max-height: 135px;
 }
 }
 
