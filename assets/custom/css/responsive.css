@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+	.sign-up-input {
+		width: 0px!important;
+	}
+	.coversion-list {
+		list-style: square;
+		display: block;
+		text-align: left;
+	}
+	.sign-up-form:hover .sign-up-input {
+		width: 150px!important;
+		padding: 0;
+	}
+	.header-links-secondary li.nav-item {
+		color: #8e8e8e;
+	}
+	.custom-dropdown-menu {
+		column-count: 1;
+		max-width: 263px;
+	}
+	.dropdown-media {
+		width: 240px;
+	}
+	.body-wrapper {
+		margin: 0;
+		width: 100%;
+		overflow-x: hidden;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	}
+	.footer-list {
+		padding-left: 0;
+	}
+	.copyright {
+		padding-left: 0;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.dropdown:hover>.dropdown-menu {
+		display: block;
+	}
+}
