@@ -594,8 +594,7 @@ ul.footer-links-secondary {
     display: inline-block;
     padding: 6px 20px;
     border-radius: 34px;
-    background: #000;
-    letter-spacing: 0.5px;
+    background: #2469c7;
     color: #fff;
     margin-top: 10px;
 }
@@ -665,8 +664,7 @@ a.call-btn {
         display: inline-block;
         padding: 6px 20px;
         border-radius: 34px;
-        background: #000;
-        letter-spacing: 0.5px;
+        background: #2469c7;
         color: #fff;
         margin-top: 10px;
         font-size: 14px;
