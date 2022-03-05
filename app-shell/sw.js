@@ -6,7 +6,7 @@ var filesToCache = [
   '/',
 ];
 
-var cacheVersion=1;
+var cacheVersion=2.1;
 
 self.addEventListener('install', function(e) {
   //self.skipWaiting();
