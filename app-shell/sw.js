@@ -1,10 +1,8 @@
 var cacheName = 'shell-content';
 var filesToCache = [
-  './assets/css/style.css',
-  './assets/js/script.js',
-  '/index.html',
-  '/',
-];
+  './app-shell/assets/css/style.css',
+  './app-shell/assets/js/script.js',
+  '/app-shell/index.html'];
 
 var cacheVersion=2.1;
 
